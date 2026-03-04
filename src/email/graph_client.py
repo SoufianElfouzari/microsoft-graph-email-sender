@@ -1,7 +1,6 @@
 import json
 import requests
 
-
 def send_graph_request(url, access_token, payload):
 
     headers = {
