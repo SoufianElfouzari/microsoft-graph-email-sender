@@ -1,4 +1,4 @@
-from src.email.email_service import send_email 
+from src.email.email_service import send_email
 
 def main(): 
     subject = "Test Email from Microsoft Graph API" 
@@ -6,7 +6,7 @@ def main():
     body = "<p>Hello, this is a test email sent using Microsoft Graph API!</p>" 
     
     try: 
-        send_email(subject, recipient, body) 
+        send_email() 
         print("Email sent successfully!") 
         print("subject:", subject) 
         print("recipient:", recipient) 
