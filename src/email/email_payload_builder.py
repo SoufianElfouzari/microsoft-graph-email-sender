@@ -1,13 +1,15 @@
-def email_payload_builder(subject, recipient, body):
+
+from config.email_config import email
+def email_payload_builder():
     email_data = {
         "message": {
-            "subject": subject,
+            "subject": email.subject,
             "body": {
                 "contentType": "HTML",
-                "content": body
+                "content": email.body
             },
             "toRecipients": [
-                {"emailAddress": {"address": recipient}}
+                {"emailAddress": {"address": email.recipient}}
             ]
         }
     }
