@@ -1,6 +1,7 @@
 
-from config.email_config import email
-def email_payload_builder():
+from src.config.email_config import email
+
+def build_email_payload():
     email_data = {
         "message": {
             "subject": email.subject,
