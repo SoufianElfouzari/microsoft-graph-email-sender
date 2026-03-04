@@ -1,4 +1,4 @@
-from email.email_service import send_email 
+from src.email.email_service import send_email 
 
 def main(): 
     subject = "Test Email from Microsoft Graph API" 
@@ -14,5 +14,5 @@ def main():
     except Exception as e: 
         print("Failed to send email:", str(e))    
               
-    if __name__ == "__main__": 
-        main() 
+if __name__ == "__main__": 
+    main() 
