@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microsoft-graph-email-sender"
+version = "0.1.0"
+description = "Python service for sending emails via Microsoft Graph API"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "msal",
+    "requests",
+    "python-dotenv"
+]
